@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  margin: 0;
+  background-color: #f8f9fa; /* Light, airy background */
+  color: #343a40; /* Dark, readable text */
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff; /* Blue link color */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+h1, h2, h3 {
+  font-weight: 600; /* Semi-bold headings */
+}
+
+/* Header */
+header {
+  background-color: #fff; /* White header */
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center the header content */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox for horizontal navigation */
+  justify-content: center; /* Center the navigation items */
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+/* Sections */
+section {
+  padding: 40px; /* Increased padding */
+}
+
+#home {
+  text-align: center;
+  background-image: url("path/to/your/image.jpg"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image */
+  color: #fff; /* White text for contrast */
+  padding: 100px 0; /* Increased padding for hero section */
+}
+
+#home h2 {
+  font-size: 2.5rem; /* Larger heading */
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 1.2rem; /* Larger paragraph text */
+  max-width: 800px; /* Limit paragraph width */
+  margin: 0 auto; /* Center the paragraph */
+}
+
+#services ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding: 0;
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+#services li {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+}
+
+#services li:hover {
+  transform: translateY(-5px); /* Move up slightly on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+}
+
+#testimonials {
+  background-color: #f8f8f8;
+}
+
+#testimonials blockquote {
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 5px solid #007bff;
+  font-style: italic;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  width: calc(100% - 18px); /* Adjusted width */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Subtle blue shadow */
+}
+
+#contact button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
